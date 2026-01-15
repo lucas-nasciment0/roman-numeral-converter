@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numeral Converter</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Roman Numeral Converter</h1>
+
+        <p class="description">
+            Convert Arabic numerals to Roman numerals. Enter a number between 1 and 3999.
+        </p>
+
+        <div class="symbols">
+            <div class="symbol"><span>M</span><span>1000</span></div>
+            <div class="symbol"><span>D</span><span>500</span></div>
+            <div class="symbol"><span>C</span><span>100</span></div>
+            <div class="symbol"><span>L</span><span>50</span></div>
+            <div class="symbol"><span>X</span><span>10</span></div>
+            <div class="symbol"><span>V</span><span>5</span></div>
+            <div class="symbol"><span>I</span><span>1</span></div>
+        </div>
+
+        <div class="input-group">
+            <input type="number" id="number" placeholder="Enter a number">
+            <button id="convert-btn">Convert</button>
+        </div>
+
+        <div class="output-container">
+            <p id="output">Result will appear here</p>
+        </div>
+
+        <div class="examples">
+            <h3>Conversion Examples</h3>
+            <ul>
+                <li>9 → IX</li>
+                <li>16 → XVI</li>
+                <li>649 → DCXLIX</li>
+                <li>1023 → MXXIII</li>
+                <li>3999 → MMMCMXCIX</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
